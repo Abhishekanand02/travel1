@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- bootsrap  -->
+    
+
+    <!-- google font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,600&display=swap"
+        rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- css style  -->
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+   <!-- nav section -->
+
+    <nav>
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <img src="images/logo 2.png"   alt="logo">
+                    <a href="project.html">
+                        <h2>Tourism</h2>
+                    </a>
+                </div>
+                <div class="nav" id=>
+                    <ul >
+                        <li><a class="menu-bar" href="project.html">Home</a></li>
+                        <li><a class="menu-bar" href="#">Travel</a></li>
+                        <li><a class="menu-bar" href="#">Book Now</a></li>
+                        <li><a class="menu-bar" href="#">Gallery</a></li>
+                        <li><a class="menu-bar" href="#"> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbtn" id=
+                "menu">
+                    <ul >
+                        <li><a class="menu-bar" href="project.html">Home</a></li>
+                        <li><a class="menu-bar" href="#">Travel</a></li>
+                        <li><a class="menu-bar" href="#">Book Now</a></li>
+                        <li><a class="menu-bar" href="#">Gallery</a></li>
+                        <li><a class="menu-bar" href="#"> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="toggle-btn" onclick="togggleFunc()">
+                    <button class="togbtn"  value="OFF"><i class="fa fa-bars" type="button"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header section -->
+
+    <header>
+        <div class="header-text">
+            <div class="front-text">
+
+                <h2 class="text"><b> Discover New Places With Us, Adventure Awaits</b>.</h2>
+                <p>One of the oldest civilisations in the world, India is a mosaic of multicultural experiences.</p>
+                <div class="search">
+                    <input type="text" class="input" placeholder="Enter your city" name="task">
+                </div>
+                <span><button class="btn">Search</button></span>
+
+            </div>
+
+            <div class="video">
+
+                <video id="vid" src="images/nature india.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+    </header>
+
+    <!-- para section -->
+
+    <div class="container first-para">
+        
+        <p class="text">India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is
+            among the most popular tourist destinations in the world. It covers an area of 32, 87,263 sq. km, extending
+            from the snow-covered Himalayan heights to the tropical rain forests of the south. As the 7th largest
+            country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the
+            sea, which give the country a distinct geographical entity.
+        
+         <br> 
+        <br>
+        <span id="read"> Fringed by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer,
+            tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As
+            you travel the expanse of the country, you are greeted by diverse nuances of cuisines, faiths, arts, crafts,
+            music, nature, lands, tribes, history and adventure sports. India has a mesmeric conflation of the old and
+            the new. As the bustling old bazaars rub shoulders with swanky shopping malls, and majestic monuments
+            accompany luxurious heritage hotels, the quintessential traveller can get the best of both worlds. Head to
+            the mountains, enjoy a beach retreat or cruise through the golden Thar, India has options galore for all.
+        </span></p>
+        <button id="read-btn" onclick="morefun()">read more...</button>
+    </div>
+
+    <!-- popular place section -->
+       <div class="container mid">
+        <div class="popular-place">
+            <h2><b> Must Visit Destinations</b></h2>
+            <p>From historical cities to natural splendours, come see the best of India.</p>
+            <div class="mid">
+            <span name="span" id="left">&#139;</span>
+            
+            <section class="slide">
+                
+                 <div class="slide-img" id><img src="images/goa1.jpg" class ="model" alt="">Goa</div>
+                 <div class="slide-img"><img src="images/kochi.jpg" class ="model" alt="">Kochi</div>
+                 <div class="slide-img"><img src="images/manali.jpg" class ="model" alt="">Manali</div>
+                 <div class="slide-img"><img src="images/Statue.jpg" class ="model"  alt="">Statue of Unity</div>
+                 <div class="slide-img"><img src="images/Taj mahal.jpg"  class ="model" alt="">Taj Mahal</div>
+                 <div class="slide-img"><img src="images/munnar.jpg" class ="model" alt="">Munnar</div>
+                 <div class="slide-img"><img src="images/shimla.jpg" class ="model" alt="">Shimla</div>
+                 <div class="slide-img"><img src="images/Bekal_Fort.jpg" class ="model" alt="">Bekal fort</div> 
+                 
+            </section>
+            <span name="span" id="right">&#155;</span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="service-tag">
+            <span class="box">S</span>
+            <span class="box">E</span>
+            <span class="box">R</span>
+            <span class="box">V</span>
+            <span class="box">I</span>
+            <span class="box">C</span>
+            <span class="box">E</span>
+            <span class="box">S</span>
+        </div>
+         <div class="service">
+            <div class="service-text"><img src="images/hotels.png"  class="service-logo">
+            <h2>Affordable Hotels</h2><p>We can arrange best accommodation in some of the best hotels in every location.</p> </div>
+            <div class="service-text"><img src="images/food.png" class="service-logo"><h2>Food & Drinks</h2><p>We provide good quality food and beverage services. Know about the food and beverage service areas, history, department, and all.</p></div>
+            <div class="service-text"><img src="images/security.png"class="service-logo" ><h2>Safety Guide</h2> <p>our goal is to deliver safe, high-quality health care to  our customer. You can use the information in this guide to improve quality of care across all the location.</p></div>
+            <div class="service-text"> <img src="images/globe.png" class="service-logo" ><h2>Around The World</h2><p>With an earnest understanding of our consumers travel preferences, We offers a vast range of holiday packages for destinations across the world.</p></div>
+            <div class="service-text"> <img src="images/travel.png" class="service-logo" ><h2>Fastest Travel</h2><p>Our firm provides the fastest travels and airline ticketing reservation service, which is highly reliable. </p></div>
+            <div class="service-text"><img src="images/adventure.png" class="service-logo" ><h2>Adventure</h2> <p>Adventurous Holiday - Book Adventure holiday Tour & Travel Packages and enjoy great deals online. Plan your Adventure holidays with us.</p></div>
+        </div>
+    </div>
+    
+     <!-- script source -->
+    <script src="project.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+</body>
+
+</html>
