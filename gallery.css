@@ -1,0 +1,240 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+a
+{
+     font-family: 'Raleway',sans-serif;
+     font-weight: 400;
+}
+ 
+ 
+ 
+ /* navbar menu */
+ .toggle-btn{
+    display: none;
+}
+.navbtn{
+    display: none;
+}
+nav
+{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 99;
+    background-color:white;
+}
+.menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo h2
+{   
+   display: inline-block;
+   color:teal;
+   font-size: 30px;
+   
+}
+.logo img
+{
+    width: 70px;
+    padding: 20px 5px 0px 0px;
+}
+.nav ul li 
+{
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: teal;
+    padding: 12px;
+    position: relative;
+    transition: all .3s ease-in;
+    text-decoration: none;
+
+   
+}
+.menu-bar::before
+{   content: "y";
+    position:absolute;
+    background-color:teal;
+    top: 0;
+    left: 10px;
+    height: 2px;
+    width: 0%;
+    font-size: 0px;
+    transition: all .5s;
+}
+.menu-bar:hover::before{
+    width: 80%;
+    color: teal;
+}
+.menu-bar:hover
+{
+    font-size: 17.5px;
+}
+.togbtn
+{
+    font-size: 23px;
+}
+ 
+
+/* all media querry info */
+@media screen and (max-width:768px) {
+    div.toggle-btn{
+        position: relative;
+        color: rgb(175, 170, 170);
+        display: block;
+        width: 5%; 
+    }
+    div.navbtn
+    {   
+        max-width: 700px;
+        /* height: 80vh; */
+        display: none;
+        position:absolute;
+        top: 0%; right: 0%; left: 0%;
+        background: rgba(0, 0, 0, .92);
+        border-top: 1px solid rgba(255, 255, 255, .5);
+        padding: 1rem 2rem ;
+       
+       
+    }
+    .navbtn ul
+    {
+        display: block;
+        padding: 20px;
+        margin: 10%;
+    }
+    .navbtn ul li 
+    {   position: relative;
+        display:block;
+        height: 80%;
+        text-align: center;
+        border-radius: 2rem;
+        box-shadow:  2px 2px 6px rgb(187, 182, 182,.4);
+        padding: 12px;
+        margin: 25px;
+        border: 1px solid whitesmoke;
+    }
+    .menu-bar
+    { 
+      color: white;
+      display:inline-block;
+      position: relative;
+      padding: 5px;
+      transition: all .3s ease;
+    }
+    .nav{
+        display: none;
+    }
+    div.logo h2{
+        font-size: 18px ;
+         }
+     div.logo img{
+         width: 40px;
+         padding-right: 0px;
+     }
+     div.gallery-tag span
+     {
+         width: 30px;
+         font-size: 20px;
+         margin: 1.5px;
+     }
+             }
+     
+     .togbtn
+     {
+         background:none ;
+         border: none;
+         color: rgb(187, 182, 182);
+         cursor: pointer;
+     }
+     div.gallery
+{
+    position: absolute;
+    top: 130px;
+} 
+
+}   
+ 
+ 
+ 
+ /* gallery section */
+.gallery
+{
+    position: absolute;
+    
+}
+  .gallery-tag
+  {    
+  
+      margin: 4%;
+      display: flex;
+      justify-content: center;
+  }
+  .gallery-tag span
+  {
+      width: 43px;
+      font-size: 30px;
+      font-weight: 600;
+      display: flex;
+      margin: 2px;
+      border-radius:6px ;
+      justify-content: center;
+      color: teal ;
+      background: rgb(9, 240, 209,.4);
+  }
+  
+  .image-section
+  {   
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  
+  .gallery-div
+  {
+      width: 330px;
+      height: 240px;
+      margin: 2%;
+      padding: 8px;
+      text-align: center;
+      border-radius: 15px;  
+      transition:all .5s ease;
+      box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      
+  }
+  .image-section img
+  {
+      width: 310px;
+      min-height: 220px;
+     border-radius: 14px;
+  }
+  
