@@ -561,8 +561,8 @@ span.box
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
-    margin: 25px;
+    padding: 10px;
+    margin: 15px;
 }
  .service-logo
 {
